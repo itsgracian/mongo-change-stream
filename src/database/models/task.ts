@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
-export interface Task extends Document {
+export interface TaskSchema extends Document {
   title: string;
   description: string;
   createdAt?: Date;
@@ -19,11 +19,13 @@ const taskSchema: Schema = new Schema({
   createdAt: {
     type: Date,
     required: false,
+    default: Date.now
   },
   updatedAt: {
     type: Date,
     required: false,
+    default: Date.now
   },
 });
 
-export default mongoose.model<Task>('Task', taskSchema);
+export default mongoose.model<TaskSchema>('Task', taskSchema);
