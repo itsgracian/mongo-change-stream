@@ -1,0 +1,24 @@
+{
+  "name": "mongo-change-stream",
+  "version": "1.0.0",
+  "description": "learn mongodb change streams",
+  "main": "index.js",
+  "repository": "https://github.com/itsgracian/mongo-change-stream.git",
+  "author": "itsgracian <gracian2020@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "nodemon src/app.ts"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "ts-node": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@types/mongoose": "^5.7.36",
+    "nodemon": "^2.0.5",
+    "typescript": "^4.0.3"
+  }
+}
